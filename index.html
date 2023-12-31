@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <script src="https://kit.fontawesome.com/a26a80eee9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main id="main">
+
+    <!-- start nav section -->
+
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary py-4">
+      <div class="container px-5">
+
+        <div class="nav-logo d-flex">
+          <a class="navbar-brand" href="#"><img class="w-75" src="images/logo@2x.png" alt=""></a>
+          <div class="d-flex flex-column justify-content-center">
+            <p class="m-0 fs-5 fw-bold">Weather</p>
+            <p class="m-0 fs-6 text-black-50">tagline goes here</p>
+          </div>
+        </div>
+
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end mt-lg-0 mt-sm-4 " id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link " href="#">News</a>
+            <a class="nav-link " href="#">Live cameras</a>
+            <a class="nav-link " href="#">Photos</a>
+            <a class="nav-link " href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end nav section -->
+
+    <!-- start home seciton -->
+
+    <section id="home" class="pb-5">
+      <div class="container pt-5">
+
+        <div class="input-group mb-5 d-flex align-items-center">
+          <input id="searchInput" type="text" class="home-input form-control position-relative rounded-pill"
+            placeholder="City name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="input-btn btn btn-outline-info position-absolute rounded-pill" type="button"
+            id="button-addon2">Find</button>
+        </div>
+
+        <div class="row column-gap-3 g-3 justify-content-around">
+          <div class="card col-md-4 p-0" style="width: 18rem;">
+            <div class="card-footer d-flex justify-content-between">
+              <span class="card-text currDay">ddd</span>
+              <span class="card-text currDate">sunday</span>
+            </div>
+            <div class="card-body">
+              <p class="city text-center h5"></p>
+              <div class="mt-3 card-body-middle d-flex justify-content-between align-items-center">
+                <h2 class="temprature display-3 fw-semibold">20C</h2>
+                <img class="currIcon" src="" alt="">
+              </div>
+              <p class="status fw-medium mt-2"></p>
+              <div class="card-lower d-flex justify-content-around mt-4 pt-2">
+                <div class="hum text-center"><i class="fs-4 fa-solid fa-umbrella"></i>
+                  <p></p>
+                </div>
+                <div class="wind text-center"><i class="fs-4 fa-solid fa-wind"></i>
+                  <p></p>
+                </div>
+                <div class="direction text-center"><i class="fs-4 fa-solid fa-compass"></i>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-4 p-0" style="width: 18rem;">
+            <div class="card-footer text-center">
+              <span class="card-text tomorrowDay">ddd</span>
+            </div>
+
+            <div class="card-body">
+              <div class="mt-3 card-body-middle d-flex flex-column justify-content-between align-items-center">
+                <img class="tomorrowIcon img-fluid flex-grow-1" src="" alt="">
+                <p class="tomorMaxTemp fs-4 m-0 fw-semibold">20C</p>
+                <p class="tomorMinTemp fs-6 text-black-50 m-0 fw-semibold">20C</p>
+                <p class="tomorrowStatus fw-medium mt-2">ggg</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-md-4 p-0" style="width: 18rem;">
+            <div class="card-footer text-center">
+              <span class="card-text nextDay">ddd</span>
+            </div>
+
+            <div class="card-body">
+              <div class="mt-3 card-body-middle d-flex flex-column justify-content-between align-items-center">
+                <img class="nextIcon img-fluid flex-grow-1" src="" alt="">
+                <p class="nextMaxTemp fs-4 m-0 fw-semibold">20C</p>
+                <p class="nextMinTemp fs-6 text-black-50 m-0 fw-semibold">20C</p>
+                <p class="nextStatus fw-medium mt-2">ggg</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end home section -->
+
+    <!-- start footer section -->
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row align-items-center ">
+          <div class="input-group mb-3 d-flex align-items-center col">
+            <input type="text" class="home-input form-control position-relative rounded-pill"
+              placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="input-btn btn btn-info position-absolute rounded-pill" type="button"
+              id="button-addon2">subscribe</button>
+          </div>
+          <div class="footer-icons col-md-4 text-white d-flex justify-content-end">
+            <div class="card-icon m-2 border rounded-circle d-flex justify-content-center align-items-center border-0">
+              <i class=" fa-brands fa-facebook-f"></i></div>
+            <div class="card-icon m-2 border rounded-circle d-flex justify-content-center align-items-center border-0">
+              <i class=" fa-brands fa-twitter"></i></div>
+            <div class="card-icon m-2 border rounded-circle d-flex justify-content-center align-items-center border-0">
+              <i class=" fa-brands fa-google-plus-g"></i></div>
+            <div class="card-icon m-2 border rounded-circle d-flex justify-content-center align-items-center border-0">
+              <i class=" fa-brands fa-pinterest-p"></i></div>
+          </div>
+        </div>
+        <div class="text-white text-center py-4">
+          <p class="m-0">Copyright 2023 AbdalrhamnMG. Designed by AbdalrhamnMG. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- end footer section -->
+  </main>
+
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

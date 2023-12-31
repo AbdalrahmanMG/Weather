@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-color {
+  color: #009ad8;
+}
+
+.main-bg-color {
+  background-color: #009ad8;
+}
+
+/* start nav section */
+
+#nav .navbar-nav a {
+  padding: 4px 20px;
+  margin-inline: 8px;
+  transition: all 0.3 ease-in-out;
+}
+
+#nav .navbar-nav a:hover {
+  border: 1px solid #009ad8;
+  border-radius: 50vh;
+  color: #009ad8;
+}
+
+#nav .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  border: 1px solid #009ad8;
+  border-radius: 50vh;
+  color: #009ad8;
+}
+
+/* end nav section */
+
+/* start home section */
+#main {
+  background-image: url(../images/skyscraper.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+#home .home-input {
+  padding: 12px 20px;
+}
+
+#home .input-btn {
+  right: 12px;
+  padding: 4px 20px;
+  z-index: 5;
+}
+
+#home .card-body {
+  height: 20rem;
+}
+
+#home .currIcon{
+  width: 50%;
+}
+/* end home section */
+
+/* start footer section */
+#footer {
+  background-color: rgba(0, 0, 0, 0.623);
+}
+#footer .home-input {
+  padding: 15px 20px;
+}
+
+#footer .input-btn {
+  right: 25px;
+  padding: 4px 20px;
+}
+
+#footer .card-icon {
+  width: 40px;
+  height: 40px;
+  background-color:rgba(255, 255, 255, 0.937);
+  color:#009ad8;
+  transition: all .3s ease-in-out;
+}
+
+#footer .card-icon:hover{
+  background-color:#009ad8;
+  color:rgba(255, 255, 255, 0.937);
+}
+/* end footer section */
